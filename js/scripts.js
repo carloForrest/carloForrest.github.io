@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-    //Screen One Event
+    //Screen One Explore Event
     $("#explore").on("click keydown", function () {
         $("#onBoard").fadeOut(function () {
             $("#browse").fadeIn().css("display", "grid");
@@ -44,6 +44,16 @@ $(document).ready(function () {
     });
 
 
+
+    //Screen One Charity Event
+
+        //ywca Event
+        $("#donate").on("click keydown", function () {
+            $("#onboard").fadeOut(function () {
+                $("#donateSelect").fadeIn().css("display", "grid");
+            });
+        });
+    
 
 
 
