@@ -1,0 +1,298 @@
+/* Styling */
+
+
+/* colours 
+#616B91 Main Blue
+#010206 Main Grey
+#FCFCFD Main White
+
+#121C40 Secondary Dark Grey
+#D4D9E9 Secondary Blue Grey
+#EDEFF5 Tertiary Blue Grey
+
+*/
+
+@font-face {
+
+    font-family: 'OverpassHeader';
+    src: url('/style/fonts/Overpass-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    color: #010206;
+}
+
+@font-face {
+    font-family: 'OverpassBody';
+    src: url('/style/fonts/Overpass-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.overPH {
+    font-family: 'OverpassHeader', arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25em;
+    line-height: 55px;
+}
+.overPSubH {
+    font-family: 'OverpassHeader', arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.overPB {
+    font-family: 'OverpassBody', arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+
+
+body {
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+        font-family: 'OverpassBody', arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+a {
+    font-family: 'Poppins';
+    font-size: 2em;
+}
+
+/* Screen One - Onboarding */
+
+#onBoard {
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100vw;
+    height: 98vh;
+    display: none;
+    gap: 20px;
+    place-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 35% 10% 55%;
+    grid-template-areas:
+        "hero hero hero hero"
+        "title title title title"
+        "donate donate explore explore"
+}
+
+#landingImage {
+    grid-area: hero;
+}
+
+#callToAction {
+    grid-area: title;
+}
+
+#donate {
+    grid-area: donate;
+    place-self: center;
+}
+
+#explore {
+    grid-area: explore;
+    place-self: center;
+}
+
+/* Screen Two - Browse */
+
+#browse {
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100vw;
+    height: 98vh;
+    display: grid;
+    gap: 20px;
+    place-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  15% 5% 20% 20% 5% 20%;
+    grid-template-areas:
+
+        ". ."
+
+        "category1 ."
+
+        "char1 char1"
+
+        "char1 char1"
+
+        "category2 ."
+
+        "char2 char2"
+}
+
+article {
+
+    background: repeat;
+}
+
+#charList {
+    grid-area: title;
+    background: repeat;
+}
+
+#titleOne {
+    grid-area: category1;
+
+}
+
+#charitiesOne {
+    grid-area: char1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#titleTwo {
+    grid-area: category2;
+}
+
+#charitiesTwo {
+    grid-area: char2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 65%;
+    gap: 20px; 
+}
+
+
+/* Screen Three - ChooseType */
+
+#donateType {
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100vw;
+    height: 98vh;
+    display: none;
+    column-gap: 20px;
+    place-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+
+        "choicePrompt choicePrompt choicePrompt choicePrompt"
+
+        ". . . ."
+
+        ". . . ."
+
+        ". clothes hygiene ."
+
+        ". . . ."
+
+        ". food money ."
+
+        ". . . ."
+
+        ". . . ."
+
+
+
+}
+
+#heroImage {
+    grid-area: choicePrompt;
+}
+
+a {
+    font-family: 'Poppins';
+    font-size: 2em;
+
+}
+
+#clothes {
+    grid-area: clothes;
+
+
+}
+
+#hygiene {
+    grid-area: hygiene;
+
+
+}
+
+#food {
+    grid-area: food;
+
+
+}
+
+#money {
+    grid-area: money;
+
+
+}
+
+
+/* Screen Four - Charity pages */
+
+.CharityPages {
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100vw;
+    height: 98vh;
+    display: none;
+    gap: 20px;
+    place-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 35% 5% 10% 45%;
+    grid-template-areas:
+
+        "hero hero hero hero"
+
+        "icons icons icons icons"
+
+        "name name name name"
+
+        "info info info info"
+}
+
+.chartHero {
+    grid-area: hero;
+
+}
+
+.iconRow {
+    grid-area: icons;
+
+}
+
+.chartName {
+    grid-area: name;
+}
+
+.chartInfo {
+    grid-area: info;
+    text-align: left;
+    font-family: 'OverpassBody', arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+
+}
+
+
+
