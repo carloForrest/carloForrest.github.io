@@ -298,7 +298,7 @@ h2 {
     gap: 20px;
     place-self: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40% 20% 5% 35%;
+    grid-template-rows: 40% 20% 5% 20% 15%;
     grid-template-areas:
 
         "hero hero hero hero"
@@ -308,6 +308,8 @@ h2 {
         "icons icons icons icons"
 
         "info info info info"
+
+        "donate donate donate donate"
 }
 
 .chartHero {
@@ -335,4 +337,11 @@ h2 {
 .chartInfo {
     grid-area: info;
     padding: 64px;
+}
+
+.donateBtn {
+    grid-area: donate;
+    background-color: #616B91;
+    margin: 20px 80px 20px 80px;
+
 }
