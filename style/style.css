@@ -67,12 +67,6 @@ body {
 }
 
 
-
-a {
-    font-family: 'Poppins';
-    font-size: 2em;
-}
-
 /* Screen One - Onboarding */
 
 #onBoard {
@@ -118,7 +112,7 @@ a {
     margin-right: 24px;
     width: 100vw;
     height: 98vh;
-    display: grid;
+    display: none;
     gap: 20px;
     place-self: center;
     grid-template-columns: repeat(2, 1fr);
@@ -175,72 +169,73 @@ article {
 
 /* Screen Three - ChooseType */
 
-#donateType {
+#donateSelect {
     text-align: center;
     margin-left: 24px;
     margin-right: 24px;
     width: 100vw;
     height: 98vh;
-    display: none;
-    column-gap: 20px;
+    display: grid;
+    gap: 20px;
     place-self: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 15% 15% 15% 15%;
     grid-template-areas:
 
-        "choicePrompt choicePrompt choicePrompt choicePrompt"
+        "choicePrompt"
 
-        ". . . ."
+        "hyg"
 
-        ". . . ."
+        "volun"
 
-        ". clothes hygiene ."
+        "money"
 
-        ". . . ."
-
-        ". food money ."
-
-        ". . . ."
-
-        ". . . ."
-
-
+        "food"
 
 }
-
-#heroImage {
+#choicePrompt {
     grid-area: choicePrompt;
 }
-
-a {
-    font-family: 'Poppins';
-    font-size: 2em;
-
-}
-
-#clothes {
-    grid-area: clothes;
-
-
-}
-
 #hygiene {
-    grid-area: hygiene;
-
+    grid-area: hyg;
 
 }
+#volunteer {
+    grid-area: volun;
 
+}
+#money {
+    grid-area: money;
+}
 #food {
     grid-area: food;
 
+}
+
+
+.promptCard {
+    border-radius: 8px;
+    background-color: #D4D9E9;
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+
+span {
+
+align-self: center;
 
 }
 
-#money {
-    grid-area: money;
+h1 {
+    text-align: left;
+    
+    }
 
+h4 {
+text-align: left;
 
 }
+
 
 
 /* Screen Four - Charity pages */
