@@ -127,10 +127,8 @@ span {
     margin-left: 24px;
     margin-right: 24px;
     height: 98vh;
-    display: none;
+    display: grid;
     gap: 20px;
-    place-self: center;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50% 30%;
     grid-template-areas:
         "hero hero"
@@ -160,13 +158,20 @@ span {
     margin-left: 64px;
     margin-right: 64px;
     height: 98vh;
-    display: grid;
+    display: none;
     gap: 20px;
     grid-template-rows: auto 10% 5% 35% 35%;
 
 }
 #goodShep {
     grid-row-start: 4;
+    align-self: end;
+
+}
+
+#covenant {
+
+    grid-row-start: 5;
     align-self: end;
 
 }
