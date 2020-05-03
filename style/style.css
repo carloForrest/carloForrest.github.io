@@ -90,6 +90,33 @@ body {
 }
 
 
+/* Icons */
+
+span {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    align-self: stretch;
+    
+    }
+
+#iconH {
+    background-image: url('/style/icons/PPE.png');
+}
+#iconV {
+    background-image: url('/style/icons/volun.png');
+}
+#iconM {
+    background-image: url('/style/icons/money.png');
+}
+#iconF {
+    background-image: url('/style/icons/food.png');
+}
+
+
+
+
 /* Screen One - Onboarding */
 
 #onBoard {
@@ -193,14 +220,14 @@ article {
 
 #donateSelect {
     text-align: center;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 64px;
+    margin-right: 64px;
     height: 98vh;
     display: grid;
-    gap: 16px;
+    gap: 24px;
     place-self: center;
     grid-template-columns: 1fr;
-    grid-template-rows:  auto 25% 15% 15% 15% 15%;
+    grid-template-rows:  5% 20% 15% 15% 15% 15% ;
     grid-template-areas:
         "."
         "choicePrompt"
@@ -236,18 +263,13 @@ article {
 
 .promptCard {
     border-radius: 8px;
-    background-color: #D4D9E9;
+    background-color:  #F1F2F7;
     display: grid;
     grid-template-columns: 30% 60%;
     
     margin: 0px;
 }
 
-span {
-
-align-self: center;
-
-}
 
 aside {
 
@@ -265,8 +287,8 @@ text-align: left;
 
 .CharityPages {
     text-align: center;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 36px;
+    margin-right: 36px;
     width: 100vw;
     height: 98vh;
     display: none;
