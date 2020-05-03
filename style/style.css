@@ -94,6 +94,7 @@ body {
 /* Icons */
 
 span {
+    font-size: 2em;
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
