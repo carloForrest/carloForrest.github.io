@@ -35,6 +35,7 @@
     font-size: 2.25em;
     line-height: 55px;
 }
+
 .overPSubH {
     font-family: 'OverpassHeader', arial, sans-serif;
     font-style: normal;
@@ -84,7 +85,7 @@ body {
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-        font-family: 'OverpassBody', arial, sans-serif;
+    font-family: 'OverpassBody', arial, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -95,20 +96,23 @@ body {
 span {
     background-size: 75%;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     align-self: stretch;
-    
-    }
+
+}
 
 .iconH {
     background-image: url('/style/icons/PPE.png');
 }
+
 .iconV {
     background-image: url('/style/icons/volun.png');
 }
+
 .iconM {
     background-image: url('/style/icons/money.png');
 }
+
 .iconF {
     background-image: url('/style/icons/food.png');
 }
@@ -123,7 +127,7 @@ span {
     margin-left: 24px;
     margin-right: 24px;
     height: 98vh;
-    display: grid;
+    display: none;
     gap: 20px;
     place-self: center;
     grid-template-columns: repeat(2, 1fr);
@@ -153,62 +157,30 @@ span {
 
 #browse {
     text-align: center;
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 100vw;
+    margin-left: 64px;
+    margin-right: 64px;
     height: 98vh;
-    display: none;
+    display: grid;
     gap: 20px;
-    place-self: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:  15% 5% 20% 20% 5% 20%;
-    grid-template-areas:
+    grid-template-rows: auto 10% 5% 35% 35%;
 
-        ". ."
+}
+#goodShep {
+    grid-row-start: 4;
+    align-self: end;
 
-        "category1 ."
-
-        "char1 char1"
-
-        "char1 char1"
-
-        "category2 ."
-
-        "char2 char2"
 }
 
+.chartCardName {
+    text-align: left;
+    padding-bottom: 20px;
+}
 article {
-
-    background: repeat;
-}
-
-#charList {
-    grid-area: title;
     background: repeat;
 }
 
 #titleOne {
-    grid-area: category1;
-
-}
-
-#charitiesOne {
-    grid-area: char1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-#titleTwo {
-    grid-area: category2;
-}
-
-#charitiesTwo {
-    grid-area: char2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 65%;
-    gap: 20px; 
+    grid-row-start: 2;
 }
 
 
@@ -223,7 +195,7 @@ article {
     gap: 24px;
     place-self: center;
     grid-template-columns: 1fr;
-    grid-template-rows:  5% 20% 15% 15% 15% 15% ;
+    grid-template-rows: 5% 20% 15% 15% 15% 15%;
     grid-template-areas:
         "."
         "choicePrompt"
@@ -237,20 +209,25 @@ article {
         "food"
 
 }
+
 #choicePrompt {
     grid-area: choicePrompt;
 }
+
 #hygiene {
     grid-area: hyg;
 
 }
+
 #volunteer {
     grid-area: volun;
 
 }
+
 #money {
     grid-area: money;
 }
+
 #food {
     grid-area: food;
 
@@ -259,10 +236,10 @@ article {
 
 .promptCard {
     border-radius: 8px;
-    background-color:  #F1F2F7;
+    background-color: #F1F2F7;
     display: grid;
     grid-template-columns: 30% 60%;
-    
+
     margin: 0px;
 }
 
@@ -272,9 +249,10 @@ aside {
 }
 
 h2 {
-text-align: left;
-    
-    }
+    text-align: left;
+
+}
+
 /* Screen Four - Charity pages */
 
 .CharityPages {
@@ -319,7 +297,3 @@ text-align: left;
     grid-area: info;
     padding: 64px;
 }
-
-
-
-
