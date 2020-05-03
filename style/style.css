@@ -96,21 +96,20 @@ span {
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center; 
-
     align-self: stretch;
     
     }
 
-#iconH {
+.iconH {
     background-image: url('/style/icons/PPE.png');
 }
-#iconV {
+.iconV {
     background-image: url('/style/icons/volun.png');
 }
-#iconM {
+.iconM {
     background-image: url('/style/icons/money.png');
 }
-#iconF {
+.iconF {
     background-image: url('/style/icons/food.png');
 }
 
@@ -124,33 +123,30 @@ span {
     margin-left: 24px;
     margin-right: 24px;
     height: 98vh;
-    display: none;
+    display: grid;
     gap: 20px;
     place-self: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 35% 10% 55%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50% 30%;
     grid-template-areas:
-        "hero hero hero hero"
-        "title title title title"
-        "donate donate explore explore"
+        "hero hero"
+        "donate explore"
 }
 
 #landingImage {
     grid-area: hero;
 }
 
-#callToAction {
-    grid-area: title;
-}
-
 #donate {
     grid-area: donate;
     place-self: center;
+    background-image: url('/style/icons/donate.png');
 }
 
 #explore {
     grid-area: explore;
     place-self: center;
+    background-image: url('/style/icons/Explore.png');
 }
 
 /* Screen Two - Browse */
@@ -223,7 +219,7 @@ article {
     margin-left: 64px;
     margin-right: 64px;
     height: 98vh;
-    display: grid;
+    display: none;
     gap: 24px;
     place-self: center;
     grid-template-columns: 1fr;
@@ -272,7 +268,6 @@ article {
 
 
 aside {
-
     align-self: center;
 }
 
@@ -280,21 +275,15 @@ h2 {
 text-align: left;
     
     }
-
-
-
 /* Screen Four - Charity pages */
 
 .CharityPages {
     text-align: center;
-    margin-left: 36px;
-    margin-right: 36px;
-    width: 100vw;
     height: 98vh;
     display: none;
     gap: 20px;
     place-self: center;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40% 20% 5% 35%;
     grid-template-areas:
 
@@ -309,32 +298,26 @@ text-align: left;
 
 .chartHero {
     grid-area: hero;
+    background-color: #616B91;
 
 }
 
 .iconRow {
     grid-area: icons;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
 
 }
 
 .chartName {
-    font-family: 'OverpassHeader', arial, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.25em;
-    line-height: 55px;
     grid-area: name;
+    text-align: left;
+    padding: 64px;
 }
 
 .chartInfo {
     grid-area: info;
-    text-align: left;
-    font-family: 'OverpassBody', arial, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 25px;
-    letter-spacing: 0.02em;
+    padding: 64px;
 }
 
 
