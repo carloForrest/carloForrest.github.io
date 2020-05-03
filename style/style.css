@@ -342,6 +342,14 @@ h2 {
 .donateBtn {
     grid-area: donate;
     background-color: #616B91;
-    margin: 20px 80px 20px 80px;
+    margin: 80px 20px 80px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: grid;
+}
+
+.donateText {
+    font-size: 2em;
+    place-self: center;
 
 }
