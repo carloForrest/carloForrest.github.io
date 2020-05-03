@@ -134,7 +134,10 @@ span {
 #landingImage {
     grid-area: hero;
     display: grid;
-
+    background-image: url('/style/icons/onus-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 #hero { 
@@ -180,27 +183,32 @@ span {
     background-image: url('/style/icons/Good_Shep.png');
     background-repeat: no-repeat;
     background-position: center;
-    place-self: stretch;
+    border-radius: 10px;
     display: grid;
-    place-items: end;
+    grid-template-rows: auto 10% 20%;
 
+}
+
+.chartCardName {
+    color:#FCFCFD;
+    grid-row-start: 2;
+    padding-left: 20px;
 }
 
 #covenant {
     grid-row-start: 5;
-    align-self: end;
-}
-
-.chartCardName {
-    text-align: left;
-    padding-bottom: 20px;
-    color: #FCFCFD;
+    background-image: url('/style/icons/Fred_V.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 10% 20%;
 }
 
 .description {
-    padding: 40px;
+    padding: 0px 0px 50px 20px;
     color:#FCFCFD;
-
+    grid-row-start: 3;
 }
 
 article {
@@ -303,6 +311,9 @@ h2 {
 }
 
 .chartHero {
+    background-image: url('/style/icons/Good_Shep.png');
+    background-repeat: no-repeat;
+    background-position: center;
     grid-area: hero;
     background-color: #616B91;
 
