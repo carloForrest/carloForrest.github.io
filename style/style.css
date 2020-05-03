@@ -117,6 +117,7 @@ span {
     background-image: url('/style/icons/food.png');
 }
 
+
 /* Screen One - Onboarding */
 
 #onBoard {
@@ -132,8 +133,8 @@ span {
 
 #landingImage {
     grid-area: hero;
-    background-color: #616B91;
     display: grid;
+
 }
 
 #hero { 
@@ -168,22 +169,38 @@ span {
 
 }
 
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
 #goodShep {
     grid-row-start: 4;
-    align-self: end;
+    background-image: url('/style/icons/Good_Shep.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    place-self: stretch;
+    display: grid;
+    place-items: end;
 
 }
 
 #covenant {
-
     grid-row-start: 5;
     align-self: end;
-
 }
 
 .chartCardName {
     text-align: left;
     padding-bottom: 20px;
+    color: #FCFCFD;
+}
+
+.description {
+    padding: 40px;
+    color:#FCFCFD;
+
 }
 
 article {
@@ -193,6 +210,8 @@ article {
 #titleOne {
     grid-row-start: 2;
 }
+
+
 
 
 /* Screen Three - ChooseType */

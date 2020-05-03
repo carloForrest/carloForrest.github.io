@@ -44,17 +44,30 @@ $(document).ready(function () {
     });
 
 
-
     //Screen One Charity Event
         $("#donate").on("click keydown", function () {
             $("#onBoard").fadeOut(function () {
                 $("#donateSelect").fadeIn().css("display", "grid");
             });
         });
+
+
+//Screen Three 
+$("#backBrowse").on("click keydown", function () {
+    $("#browse").fadeOut(function () {
+        $("#donateSelect").fadeIn().css("display", "grid");
+    });
+});
+
     
 
+//Screen Three Category Events
 
-
+$("#food").on("click keydown", function () {
+    $("#donateSelect").fadeOut(function () {
+        $("#browse").fadeIn().css("display", "grid");
+    });
+});
 
 
 
