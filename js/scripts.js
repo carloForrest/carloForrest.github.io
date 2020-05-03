@@ -46,10 +46,8 @@ $(document).ready(function () {
 
 
     //Screen One Charity Event
-
-        //ywca Event
         $("#donate").on("click keydown", function () {
-            $("#onboard").fadeOut(function () {
+            $("#onBoard").fadeOut(function () {
                 $("#donateSelect").fadeIn().css("display", "grid");
             });
         });

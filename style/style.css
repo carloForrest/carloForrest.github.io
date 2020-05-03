@@ -117,15 +117,10 @@ span {
     background-image: url('/style/icons/food.png');
 }
 
-
-
-
 /* Screen One - Onboarding */
 
 #onBoard {
     text-align: center;
-    margin-left: 24px;
-    margin-right: 24px;
     height: 98vh;
     display: grid;
     gap: 20px;
@@ -137,18 +132,27 @@ span {
 
 #landingImage {
     grid-area: hero;
+    background-color: #616B91;
+    display: grid;
+}
+
+#hero { 
+    text-align: center;
+    align-self: center;
 }
 
 #donate {
     grid-area: donate;
-    place-self: center;
     background-image: url('/style/icons/donate.png');
 }
 
 #explore {
     grid-area: explore;
-    place-self: center;
     background-image: url('/style/icons/Explore.png');
+}
+
+.ctaText {
+    text-align: center;
 }
 
 /* Screen Two - Browse */
@@ -163,6 +167,7 @@ span {
     grid-template-rows: auto 10% 5% 35% 35%;
 
 }
+
 #goodShep {
     grid-row-start: 4;
     align-self: end;
@@ -180,6 +185,7 @@ span {
     text-align: left;
     padding-bottom: 20px;
 }
+
 article {
     background: repeat;
 }
@@ -197,8 +203,6 @@ article {
     margin-right: 64px;
     height: 98vh;
     display: none;
-    gap: 24px;
-    place-self: center;
     grid-template-columns: 1fr;
     grid-template-rows: 5% 20% 15% 15% 15% 15%;
     grid-template-areas:
